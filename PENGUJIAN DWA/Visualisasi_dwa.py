@@ -1,15 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-================================================================
- Visualisasi Lintasan Kandidat DWA (Dynamic Window Approach)
- Membaca hasil perhitungan manual DWA di Excel
- (Analisis_Komputasi_DWA.xlsx) lalu memvisualisasikan seluruh
- lintasan kandidat beserta titik prediksinya, dan menandai
- kandidat terbaik (biaya G minimum) yang dipilih sebagai V_CMD/OMEGA_CMD.
-================================================================
- Sumber data : Analisis_Komputasi_DWA.xlsx (sheet "Sheet1")
- Output      : dwa_lintasan_kandidat.png
-================================================================
  CARA BACA SPREADSHEET:
    - Kolom 5-6 (label/nilai) : parameter posisi & state robot saat ini
      (Xt, Yt, Theta_t, Vt, Omega_t, Goals x/y, X obs, Y obs, dst.)
@@ -22,7 +12,6 @@
    - Sel G_min / V_CMD / OMEGA_CMD : kandidat dengan G minimum,
      dipakai untuk verifikasi bahwa kandidat terbaik yang dideteksi
      skrip ini sama dengan hasil pilihan spreadsheet
-================================================================
 """
 
 import os
